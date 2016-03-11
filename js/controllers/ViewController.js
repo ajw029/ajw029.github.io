@@ -1,5 +1,5 @@
-app.controller('ViewController', ['$scope', '$location', '$anchorScroll', '$ocLazyLoad', '$rootScope',
-  function($scope, $location, $anchorScroll, $ocLazyLoad, $rootScope) {
+app.controller('ViewController', ['$scope', '$location', '$anchorScroll', '$rootScope',
+  function($scope, $location, $anchorScroll, $rootScope) {
 		triggered_times = 0;
 		skill_triggered_times = 0;
 		mywork_triggered_times = 0;

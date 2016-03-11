@@ -1,4 +1,4 @@
-var app = angular.module("theportfolio", ['ngRoute', 'oc.lazyLoad']);
+var app = angular.module("theportfolio", ['ngRoute']);
 
 app.config(function ($routeProvider, $locationProvider) {
     $routeProvider
