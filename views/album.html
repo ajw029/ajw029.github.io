@@ -1,0 +1,36 @@
+<div class="apple-slider">
+	<div class="slide">
+		<div class="column-100">
+				<div class="column-40 photo-album-nohover">
+						<div>
+							<img src="photography/sf/sf.jpg" alt="bridge">
+						</div>
+				</div>
+				<div class="column-60">
+					<div class="photo-description">
+						<h1>{{album.name}}</h1>
+						<div class="photo-info">
+							<span>{{album.description}}</span>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+
+<!-- Start of Photo Gallery-->
+<div class="apple-slider">
+	<div class="slide">
+		<div class="column-100">
+
+			<a ng-repeat="x in album.photos" class="column-25 google-card fadeIn">
+				<div class="card card--sm">
+					<div class="card__image">
+						<img src="img/adopt.png" alt="bridge">
+					</div>
+				</div>
+			</a>
+
+		</div>
+	</div>
+</div> <!-- -->

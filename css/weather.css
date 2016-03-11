@@ -1,0 +1,297 @@
+.star-container {
+  position: absolute;
+  top: 0;
+  width: 80%;
+  height: 70%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+
+}
+.star-container img {
+  width: 35px;
+}
+.star1 {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  -webkit-animation: star-flicker 2s ease-in infinite;
+  -moz-animation: star-flicker 2s ease-in infinite;
+  -o-animation: star-flicker 2s ease-in infinite;
+  animation: star-flicker 2s ease-in infinite;
+}
+.star2 {
+  position: absolute;
+  top: 270px;
+  right: 3%;
+  -webkit-animation: star-flicker 4s ease-in infinite;
+  -moz-animation: star-flicker 4s ease-in infinite;
+  -o-animation: star-flicker 4s ease-in infinite;
+  animation: star-flicker 4s ease-in infinite;
+}
+
+.star3 {
+  position: absolute;
+  top: 100px;
+  right: 8%;
+  -webkit-animation: star-flicker 2s ease-in infinite;
+  -moz-animation: star-flicker 2s ease-in infinite;
+  -o-animation: star-flicker 2s ease-in infinite;
+  animation: star-flicker 2s ease-in infinite;
+}
+
+.star4 {
+  position: absolute;
+  top: 450px;
+  left: 15%;
+  -webkit-animation: star-flicker 1s ease-in infinite;
+  -moz-animation: star-flicker 1s ease-in infinite;
+  -o-animation: star-flicker 1s ease-in infinite;
+  animation: star-flicker 1s ease-in infinite;
+}
+
+.ucsd-scene-container{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  bottom: 50px;
+}
+
+
+@keyframes star-flicker {
+  0%{
+    opacity: 1;
+
+  }
+  50%{
+    -webkit-transform: scale(.8);
+    transform: scale(.8);
+  }
+  100%{
+    opacity: .8;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.sun{
+  position: relative;
+  left: 0px;
+  width: 85px;
+  height: 85px;
+  background: #f9db62;
+  border-radius: 360px;
+  opacity: 1;
+  -webkit-animation: sun 5s 0s linear infinite;
+  -moz-animation: sun 5s 0s linear infinite;
+  -o-animation: sun 5s 0s linear infinite;
+  animation: sun 5s 0s linear infinite;
+}
+
+.cloud{
+  position: relative;
+  top: 20px;
+  left: 8px;
+  z-index: 2;
+}
+
+.cloud1{
+  position: absolute;
+  bottom: 0px;
+  z-index: 5;
+  -webkit-animation: cloud 15s 0s linear infinite;
+  -moz-animation: cloud 15s 0s linear infinite;
+  -o-animation:cloud 15s 0s linear infinite;
+  animation: cloud 15s 0s linear infinite;
+}
+
+.cloud1:before{
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 28px;
+  width: 90px;
+  height: 20px;
+  background: #fff;
+}
+
+.cloud1 ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cloud1 ul li{
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  float: left;
+  border-radius: 360px;
+}
+
+.cloud1 ul li:nth-child(2){
+  width: 70px;
+  height: 70px;
+  background: #fff;
+  float: left;
+  border-radius: 360px;
+  position: absolute;
+  bottom: 18px;
+  left: 25px;
+}
+
+.cloud1 ul li:nth-child(3){
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  float: left;
+  border-radius: 360px;
+  position: absolute;
+  bottom: 8px;
+  left: 60px;
+}
+
+.cloud1 ul li:last-child{
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  float: left;
+  border-radius: 360px;
+  position: absolute;
+  bottom: 0px;
+  left: 90px;
+}
+
+.bird{
+  background:black;
+  border-radius: 50% 50% 20% 20%;
+  color:white;
+  line-height:10px;
+  letter-spacing: 2px;
+  text-align:center;
+  width:10px; 
+  height:10px;
+  z-index:999;
+}
+
+.bird1 {
+  position:absolute;
+  top:90px; 
+  left:135px;
+}
+
+.bird2 {
+  position:absolute;
+  top:60px; 
+  left:110px;
+}
+
+.bird:after,
+.bird:before{
+  content:"";
+  position:absolute;
+  top:50%; left:50%;
+}
+.bird .right-wing {
+  border-radius: 100% 100% 0 0;
+  box-shadow: inset 0px 2px 0 black;
+  width:20px; 
+  height:20px;
+  position: absolute;
+  top: -5px;
+  left: 5px;
+
+  -webkit-animation: flap-right 1s 0s linear infinite;
+  -moz-animation: flap-right 1s 0s linear infinite;
+  -o-animation: flap-right 1s 0s linear infinite;
+  animation: flap-right 1s 0s linear infinite;
+}
+
+.bird .left-wing {
+  border-radius: 100% 100% 0 0;
+  box-shadow: inset 0px 2px 0 black;
+  width:20px; 
+  height:20px;
+  position: absolute;
+  top: -5px;
+  right: 5px;
+  -webkit-animation: flap-left 1s 0s linear infinite;
+  -moz-animation: flap-left 1s 0s linear infinite;
+  -o-animation: flap-left 1s 0s linear infinite;
+  animation: flap-left 1s 0s linear infinite;
+}
+
+.bird:before{
+  background:#FFC37F;
+  border-radius: 100%;
+  margin-top:3px; 
+  margin-left:-1px;
+  width:2px; height:2px;
+}
+
+.ucsd-scene-container img {
+  width: 250px;
+  height: 87px;
+  position: relative;
+  top: 20px;
+  left: 0;
+}
+
+@keyframes flap-left {
+  50%{
+    transform: rotate(40deg);
+  }
+}
+
+@keyframes flap-right {
+  50%{
+    transform: rotate(-40deg);
+  }
+}
+
+@keyframes sun {
+  0% { background: #f1c40f; }
+  50% { background: #e67e22; }
+  100% { background: #f1c40f; }
+}
+
+@keyframes cloud{
+  0% {
+    transform:translateY(10%);
+  }
+
+  25% {
+    transform:translateY(-10%);
+  }
+
+  50% {
+      transform:translateY(10%);
+  }
+  75% {
+      transform:translateY(-10%);
+  }
+  100% {
+      transform:translateY(10%);
+  }   
+}
+
+@keyframes fade_in{
+  0%{
+    opacity: 0;
+  }
+  8%{
+    opacity: 1;
+  }
+  9%{
+    opacity: 1;
+  }
+  11%{
+    opacity: 1;
+  }
+  12%{
+    opacity: 0;
+  }
+  100%{
+    oapcity: 0;
+  }
+}    

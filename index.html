@@ -1,1 +1,123 @@
-Hello World
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>Anthony Wang's Portfolio</title>
+	<meta name="description"
+		content="Anthony Wang Front End Developer Full Stack Portfolio Software Engineer UI UX Design">
+
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/weather.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/googlenow.css">
+	<link rel="stylesheet" href="css/parallax.css">
+	<link rel="stylesheet" href="css/vinyl.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/hamburger.css">
+
+	<script src="js/jquery.js"></script>
+	<script src="js/angular.js"></script>
+	<script src="js/angular-route.js"></script>
+	<script src="js-min/main-min.js"></script>
+	<script src="js/slick.js"></script>
+	<script src="js/ocLazyLoad.js"></script>
+</head>
+
+<body ng-app="theportfolio" ng-controller="ViewController">
+	<div id="topOfPage" style="visibility:none"></div>
+	<nav id="top-nav">
+		<div class="nav-container">
+			<div id="desktop-nav">
+				<ul class="navbar">
+					<li><a href="#index"><i class="fa fa-home"></i> <span>Home</span></a></li>
+					<li><a onclick="anchor('#basic-info')"><i class="fa fa-info"></i> <span>About Me</span></a></li>
+					<li><a onclick="anchor('#project-section')"><i class="fa fa-file-text-o"></i> <span>Projects</span></a></li>
+					<!--li><a href="#portfolio"><i class="fa fa-file-text-o"></i> <span>Portfolio</span></a></li-->
+					<!--li><a href="#photo"><i class="fa fa-camera-retro"></i> <span>Photography</span></a></li-->
+					<li><a href="https://soundcloud.com/saskrillex"><i class="fa fa-music"></i> <span>Music</span></a></li>
+					<li><a onclick="anchor('#contactbox')"><i class="fa fa-users"></i> <span>Contact</span></a></li>
+				</ul>
+				<div class="backbutton" ng-show="show">
+					<ul class="navbar right-nav">
+						<li><a href="#index#project-section"><i class="fa fa-hand-o-left"></i> <span>Back to Projects</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="mobile-nav">
+				<ul class="navbar">
+					<li><button onclick="navbar()"><i class="fa fa-bars"></i></button></li>
+				</ul>
+				<div class="backbutton" ng-show="show">
+					<ul class="navbar right-nav">
+						<li><a href="#index#project-section"><i class="fa fa-hand-o-left"></i> Return</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</nav>
+
+	<div class="mobile-nav hidden">
+		<ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
+			<li><a href="#" onclick="navbar()"><i class="fa fa-times"></i> <span>Close</span></a></li>
+			<li><a href="#index"><i class="fa fa-home"></i> <span>Home</span></a></li>
+			<li><a onclick="anchor('#basic-info')"><i class="fa fa-info"></i> <span>About Me</span></a></li>
+			<li><a onclick="anchor('#project-section')"><i class="fa fa-file-text-o"></i> <span>Projects</span></a></li>
+			<!--li><a href="#photo"><i class="fa fa-camera-retro"></i> <span>Photography</span></a></li-->
+			<li><a href="https://soundcloud.com/saskrillex"><i class="fa fa-music"></i> <span>Music</span></a></li>
+			<li><a onclick="anchor('#contactbox')"><i class="fa fa-users"></i> <span>Contact</span></a></li>
+		</ul>
+	</div>
+	<div class="nav-overlay" onclick="clickOverlay()"></div>
+
+	<div ng-view></div>
+
+	<div class="apple-slider red-back">
+		<div class="slide">
+			<div class="contact-info column-100">
+				<div id="contactbox" class="centered-column">
+					<div class="column-100">
+						<h1>Let's Get In Touch</h1>
+						<div>
+							<ul>
+								<li><a href="mailto:anthony.wang@me.com"><i class="fa fa-envelope-o"></i></a></li>
+								<li><a href="https://www.linkedin.com/in/anthony-wang-19193692"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="https://www.instagram.com/saskrill3x/"><i class="fa fa-instagram"></i></a></li>
+								<li><a href="https://soundcloud.com/saskrillex"><i class="fa fa-soundcloud"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="upbutton">
+			<a onclick="anchor('#topOfPage')"><i class="fa fa-angle-up"></i></a>
+		</div>
+		<div class="foot">
+			<div class="copyright">
+				<p>Copyright © Anthony Wang. All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Modules-->
+	<script src="js/app.js"></script>
+
+	<!-- Controllers >
+	<script src="js/controllers/ViewController.js"></script>
+	<script src="js/controllers/PortfolioController.js"></script -->
+	<script src="js-min/controllers-min.js"></script>
+
+	<!-- Services -->
+	<script src="js/services/factory.js"></script>
+	<!--script src="js/services/service.js"></script-->
+
+</body>
+</html>

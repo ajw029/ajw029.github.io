@@ -1,0 +1,273 @@
+.dj-container {
+	position: relative;
+	height: 250px;
+	width: 100%;
+}
+.dj-controller {
+	width: 757px;
+	height: 250px;
+	margin: 0 auto;
+	position: absolute;
+}
+.turntable {
+	width: 250px;
+	height: 100%;
+	position: relative;
+	background-color: #727272;
+	display: inline-block;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+div.buttons {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	height: 100%;
+	display: inline-block;
+	position: absolute;
+	left: 15px;
+}
+.turntable .play {
+	border-radius: 100%;
+	background-color: #B6B6B6;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	border: 2px solid #4CAF50;
+	bottom: 5px;
+}
+.turntable .play:hover {
+	border: 2px solid #449d48;
+}
+.turntable .cue {
+	border-radius: 100%;
+	background-color: #B6B6B6;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	border: 2px solid #FFC107;
+	bottom: 38px;
+}
+.turntable .cue:hover {
+	border: 2px solid #FFAC07;
+}
+.turntable .pitch {
+	background-color: #616161;
+	width: 20px;
+	height: 100px;
+	position: absolute;
+	left: 205px;
+	top: 75px;
+}
+.mixer {
+	width: 250px;
+	height: 80%;
+	position: relative;
+	background-color: #727272;
+	display: inline-block;
+}
+
+.mixer .ab {
+	width: 90px;
+	height: 20px;
+	background-color: #616161;
+	bottom: 10px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+.knobsnstuff {
+	width: 90%;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	display: inline-block;
+	position: absolute;
+	margin-top: 30px;
+}
+.knobsnstuff .track {
+	display: inline-block;
+	position: relative;
+	width: 23.5%;
+	text-align: center;
+}
+.vinyl {
+	position:relative;
+	z-index:1;
+	display:block;
+	width:175px;
+	height:175px;
+	margin: 0 auto;
+	top: 38px;
+	border-radius:100%;
+	background: -moz-linear-gradient(top,  rgba(60,60,60,1) 0%, rgba(0,0,0,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(60,60,60,1)), color-stop(100%,rgba(0,0,0,1)));
+	background: -webkit-linear-gradient(top,  rgba(60,60,60,1) 0%,rgba(0,0,0,1) 100%);
+	background: -o-linear-gradient(top,  rgba(60,60,60,1) 0%,rgba(0,0,0,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(60,60,60,1) 0%,rgba(0,0,0,1) 100%);
+	background: linear-gradient(top,  rgba(60,60,60,1) 0%,rgba(0,0,0,1) 100%);
+	transition: all 500ms ease-in-out;
+	-moz-transition: all 500ms ease-in-out;
+	-webkit-transition: all 500ms ease-in-out;
+	-o-transition: all 500ms ease-in-out;
+}
+div.vinyl.blue:after {
+	position: absolute;
+	display: block;
+	content: "\0020";
+	width: 34px;
+	height: 53px;
+	border-radius: 100%;
+	top: 60px;
+	left: 60px;
+	padding-left: 19px;
+	background: #a53cb7;
+	border: 1px solid #000;
+}
+div.vinyl.red:after {
+	position: absolute;
+	display: block;
+	content: "\0020";
+	width: 34px;
+	height: 53px;
+	border-radius: 100%;
+	top: 60px;
+	left: 60px;
+	padding-left: 19px;
+	background: #FF5252;
+	border: 1px solid #000;
+}
+.vinyl-dot {
+	position: absolute;
+	display: block;
+	width: 15px;
+	height: 15px;
+	top: 80px;
+	left: 80px;
+	border-radius: 100%;
+	background-color: #212121;
+	font-size: 40px;
+	z-index: 999;
+}
+
+.track .volume-level {
+	width: 15px;
+	height: 45px;
+	background-color: #616161;
+	margin: 0 auto;
+}
+
+.spin {
+	animation: spin 600ms infinite;
+	-moz-animation: spin 600ms infinite;
+	-webkit-animation: spin 600ms infinite;
+}
+
+@keyframes spin {
+	from {
+		-moz-transform:rotate(0deg);
+		-webkit-transform:rotate(0deg);
+		-o-transform:rotate(0deg);
+		-ms-transform:rotate(0deg);
+		transform:rotate(0deg);
+	}
+	to {
+		-moz-transform:rotate(360deg);
+		-webkit-transform:rotate(360deg);
+		-o-transform:rotate(360deg);
+		-ms-transform:rotate(360deg);
+		transform:rotate(360deg);
+	}
+}
+
+@-moz-keyframes spin {
+	from {
+		-moz-transform:rotate(0deg);
+		transform:rotate(0deg);
+	}
+	to {
+		-moz-transform:rotate(360deg);
+		transform:rotate(360deg);
+	}
+}
+.knob-surround {
+	position: relative;
+	background-color: grey;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border: 1px solid #B6B6B6;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	background: #181818;
+}
+
+.cue-button {
+	width: 15px;
+	height: 8px;
+	background-color: #FFC107;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+.cue-button:hover {
+	background-color: #FFAC07;
+}
+@-webkit-keyframes spin {
+	from {
+		-webkit-transform:rotate(0deg);
+		transform:rotate(0deg);
+	}
+	to {
+		-webkit-transform:rotate(360deg);
+		transform:rotate(360deg);
+	}
+}
+div#pioneer-container {
+	margin: 0 auto;
+}
+
+@media screen and (max-width : 766px) {
+	.dj-controller {
+		transform: scale(.9, .9);
+		transform-origin: 0;
+	}
+}
+@media screen and (max-width : 704px) {
+	.dj-controller {
+		transform: scale(.8, .8);
+	}
+}
+
+@media screen and (max-width : 652px) {
+	.dj-controller {
+		transform: scale(.8, .8);
+	}
+}
+@media screen and (max-width: 593px) {
+	.dj-controller {
+		transform: scale(.7, .7);
+	}
+}
+@media screen and (max-width: 504px) {
+	.dj-controller {
+		transform: scale(.6, .6);
+	}
+}
+@media screen and (max-width: 414px) {
+	.dj-controller {
+		transform: scale(.5, .5);
+	}
+}
+@media screen and (max-width: 375px) {
+	.dj-controller {
+		transform: scale(.45, .45);
+	}
+}
+@media screen and (max-width: 320px) {
+	.dj-controller {
+		transform: scale(.38, .38);
+	}
+}

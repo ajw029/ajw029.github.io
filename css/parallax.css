@@ -1,0 +1,81 @@
+section.parallax.parallax.parallax-1{
+	background-image: url("../img/Flat-Office-Desk2-sm.png");
+}
+.parallax-tinder{
+	background-image: url("../img/tinwebapp.png");
+}
+.parallax-vice{
+	background-image: url("../img/virtue.png");
+}
+.parallax-music{
+	background-image: url("../img/musicapp/mobile4.png");
+}
+.parallax-music2{
+	background-image: url("../img/musicapp/mobile5.png");
+}
+.mobile-section img {
+	width: 100%;
+}
+section.module.parallax {
+	height: 450px;
+	background-position: 25%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+section.module.parallax2 {
+	height: 506px;
+	background-position: 0 150px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+section.module.parallax3 {
+	height: 350px;
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: ;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: 50% 100%;
+}
+
+
+.parallax .parallax-container, .parallax2 .parallax-container, .parallax3 .parallax-container {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.parallax .parallax-container h1 {
+	font-size: 42px;
+	font-weight: 300;
+	padding-top: 200px;
+	text-align: center;
+}
+
+.parallax .parallax-container h2 {
+	font-size: 22px;
+	font-weight: 300;
+	text-align: center;
+	margin-top: 10px;
+	color: #616161;
+}
+@media screen and (max-width : 820px){
+	.mobile-section {
+		display: block;
+	}
+	.desktop-section {
+		display: none;
+	}
+
+}
