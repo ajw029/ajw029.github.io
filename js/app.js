@@ -30,18 +30,6 @@ app.config(function ($routeProvider, $locationProvider) {
         templateUrl: 'views/tinder.html',
         controller: 'ProjectController'
       })
-      .when('/mobileplaylist', {
-        templateUrl: 'views/mobileplaylist.html',
-        controller: 'ProjectController'
-      })
-      .when('/photo', {
-        templateUrl: 'views/photo.html',
-        controller: 'PortfolioController'
-      })
-      .when('/photo/album/:albumID', {
-        templateUrl: 'views/album.html',
-        controller: 'AlbumController'
-      })
       .otherwise({
         templateUrl: 'views/main.html',
   			controller: 'ViewController'
